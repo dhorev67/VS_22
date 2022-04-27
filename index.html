@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <style>
+      *{
+        box-sizing: border-box;
+      }
+      .div{
+        border:none
+      }
+      .div1{
+        display:flex
+      }
+    </style>
+    <link
+      href="css/spectrogram.css"
+      media="screen"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  </head>
+
+  <body onload="loadFunction()">
+    <section class="showcase">
+      <header>
+        <h2 class="logo">Visual &nbsp;Analytics</h2>
+        <div class="toggle"></div>
+      </header>
+      <video id="vid" src="\img\RCBP.mp4" muted loop autoplay></video>
+      <div class="overlay"></div>
+      <div class="text">
+        <h2>Vast Challenge 2018 MC1</h2> 
+        <h3>About the challenge</h3>
+        <p>The VAST Challenge results in 2017 revealed that the Kasios Furniture manufacturing firm may have been a major cause to
+          the apparent decline in the number of Rose-Crested Blue Pipit nesting pairs, a beloved bird of Mistford residents and visitors
+         to the Boonsong Lekagul Nature Preserve. Kasios allegedly employed Methylosmolene, a prohibited chemical, in their production
+         process.They smuggled process waste into the Preserve's northeast corner, and methylosmolene was found in their chimney emissions.</p>
+        <a href="#cont">Explore...</a>
+      </div>
+    </section>
+    <div class="menu">
+      <ul style="font-weight: bold;">
+        <li style="line-height:2em; margin-left: 1%;"><a href="#vid">Home</a></li>
+        <li style="line-height:2em; margin-left: 1%;"><a href="#cont">About challenge</a></li>
+        <li style="line-height:2em; margin-left: 1%;"><a href="#Que">Questions addressed</a></li>
+        <li style="line-height:2em; margin-left: 1%;"><a href="#analysis">Analysis</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#Spect">Spectogram Analysis</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#ml">ML Models Analysis</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#ml">ML Models Performace</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#ml">Model Results</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#ml">Conclusion</a></li>
+
+        <li style="margin-top: 60%;"><a style="font-size: 130%; line-height:1.5em; margin-left: 1%;">Team Members:</a>
+          <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Manoj Reddy Kotha</li>
+          <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Krishna Chaitanya Surabhi</li>
+          <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Sai Manoj Mogaparthi</li>
+          <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Vipeen Subhash Dhore</li>
+          <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Prabath Kiran Reddy</li>
+		      <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Shreyas Reddy Inavole</li>
+        </li>
+        
+
+
+      <ul>
+    </div>
+    <h1 style="text-align: center;">Vast Challenge 2018 Mini-Challenge 1</h1>
+	<img width="1400" height="450" src="\img\MC1 2018.jpg">
+    <div id="des">
+      <p> 
+        Designed by:       
+          <li>Vipeen S Dhore:<a>madhus57@students.rowan.edu</a></li>
+          <li>Prabath Kiran Reddy<a>muchel37@students.rowan.edu</a></li>
+          <li>Manoj Kumar Reddy<a>vangur24@students.rowan.edu</a></li>
+          <li>Krishna Chaitanya<a>doddaa58@students.rowan.edu</a></li>
+          <li>Shreyash<a></a>doddaa58@students.rowan.edu</li>
+        
+      </p>
+    </div>
+    <h2>About the challenge</h2>
+    <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+        
+        
+<hr>
+<div id="cont">
+      <h4>Continued....</h4>
+      <p style="line-height:1.5em; margin-left: 1%;">Kasios now alleges that the study was incorrect and skewed in his favor. Kasios has undertaken its own "study" into the Pipit 
+      issue in response to these conclusions, and they now say that there are lots of Rose-crested Blue Pipits contentedly living and 
+      nesting in the Preserve. They have given a collection of Pipit bird cries that were recently captured around the Preserve, along 
+      with the places where they were recorded, to back up their claim. They assert that the Pipits are clearly a thriving population, 
+      and Kasios will offer additional proof as their inquiry continues.
+      In last year's Challenge, Mitch Vogel, an ornithology graduate student from Mistford College, found the Pipit's condition and 
+      conducted an inquiry. Normally, we'd enlist Mitch's assistance to verify Kasios' assertion. Unfortunately, Mitch is working in a 
+      distant region without internet connectivity for a lengthy period of time and cannot be reached easily.</p>
+    </div>
+    <div>
+      <p style="line-height:1.5em; margin-left: 1%;">The Pangera Ornithology Conservation Society, which funded Mitch last year, is at a loss for what to do in light of this 
+      development. The townfolk and Preserve rangers appear to agree that Kasios' statements are supported by the recordings. Mistford 
+      College is unable to get the assistance of another Pipit specialist. They do, however, have a collection of bird cries from the 
+      Preserve that have been reviewed as having correct identifications by several ornithology organisations. They've heard that new 
+      machine learning and visual analytics approaches can be used in circumstances like these. These technologies might perhaps be used
+       to classify and analyze the calls, which could then be evaluated when Mitch returns.</p>
+    </div>
+    </p>
+    <hr>
+    <h2 id="Que">Tasks and Questions:</h2>
+    <p>
+      <ol>
+        <li style="line-height:1.5em">Using the bird call collection and the included map of the Wildlife Preserve, characterize the patterns of all of the bird 
+          species in the Preserve over the time of the collection. Please assume we have a reasonable distribution of sensors and human 
+          collectors providing the recordings, so that the patterns are reasonably representative of the bird locations across the area. 
+          Do you detect any trends or anomalies in the patterns?</li>
+        <li style="line-height:1.5em;">
+          Turn your attention to the set of bird calls supplied by Kasios. Does this set support the claim of Pipits being found across 
+          the Preserve? A machine learning approach using the bird call library may help your investigation. What is the role of 
+          visualization in your analysis of the Kasios bird calls?
+        </li>
+        <li style="line-height:1.5em">
+          Formulate a hypotheses concerning the state of the Rose Crested Blue Pipit. What are your primary pieces of evidence to support
+          your assertion? What next steps should be taken in the investigation to either support or refute the Kasios claim that the 
+          Pipits are actually thriving across the Boonsong Lekagul Wildlife Preserve?
+        </li>
+      </ol>
+      <hr>
+    </p>
+    <h2 id="analysis">Analysis based on available data:</h2>
+    <div>
+      <div style="width: 100%;">
+        <div style="margin-right: 5%; height: 530px; float: left; background: none"> \
+          <img style="border:1px solid black;" width="600" height="500" src="\img\Vocal.png">
+        </div>
+        <div style="  margin-left:55%; height: 530px; background:none"> 
+            <img style="border:1px solid black;" width="600" height="502" src="\img\VQ.png">
+        </div>
+      </div> 
+      <hr>
+      <div style="width: 100%;">
+        <div style="margin-right: 5%; height: 700px; float: left; background: none"> 
+          <h4 style="font-size:larger">Captured Locations of Rose-Crested Blue Pipits(1991 to 2018)
+          <p>
+            daojcjaspckaspc
+          </p>
+          </h4>
+        </div>
+        <div style="margin-left:55%; height: 700px; background:none"> 
+            <video style="border:1px solid black;" width="670" height="700" id="RCBPlocation" autoplay controls >
+          <source src="\img\RCBPlocation.mp4" type="video/mp4">
+        </div>
+      </div>
+      <hr>
+      <div style="width: 100%;">
+        <div style=" width: 60%; height: 500px; float: left; background: none;"> 
+          <video width="900" height="500" id="RCBPcount" autoplay loop muted>
+            <source src="\img\RCBPcount.mp4" type="video/mp4">
+        </div>
+        <div style="margin-left: 40%; height: 500px; background: none;"> 
+          <h4 style="font-size:larger">Population variations of Rose-Crested Blue Pipits(1991 to 2018)</h4>
+        </div>
+    </div>
+       <script>
+           var RCBPlocation = document.getElementById('RCBPlocation');
+       
+           // Auto play, half volume.
+           RCBPlocation.play()
+           RCBPlocation.volume = 0.5;
+       
+           // Play / pause.
+           RCBPlocation.addEventListener('click', function () {
+               if (RCBPlocation.paused == false) {
+                RCBPlocation.pause();
+                RCBPlocation.firstChild.nodeValue = 'Play';
+               } else {
+                RCBPlocation.play();
+                RCBPlocation.firstChild.nodeValue = 'Pause';
+               }
+           });
+           var RCBPcount = document.getElementById('RCBPcount');
+       
+           // Auto play, half volume.
+           RCBPcount.play()
+           RCBPcount.volume = 0.5;
+       
+           // Play / pause.
+           RCBPcount.addEventListener('click', function () {
+               if (RCBPcount.paused == false) {
+                RCBPcount.pause();
+                RCBPcount.firstChild.nodeValue = 'Play';
+               } else {
+                RCBPcount.play();
+                RCBPcount.firstChild.nodeValue = 'Pause';
+               }
+           });
+            
+       </script> 
+    </div>
+    <hr>
+    <h2 id="Spect" style="margin-top:2%;">Spectogram Analysis</h2>
+    <h3>&emsp;Rose Creste Blue Pipit Spectogram pattern:</h3>
+      <p>&emsp;The spectogram below designs the Rose crested blue pipit birds voice pattern, which further could be helpful to compare the kasios audio files pattern</p>
+    <div id="species"></div>
+
+    <div id="rcbp" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;RCBP Audio File  </div>
+    <hr>
+    <h3 style="margin-top:2%;">&emsp;Audio Files by Kasios:</h3>
+      <p>&emsp;Kasios has provided 15 audio files which the claim that sensors has captured near the dumping zones.
+        Below we have designed the spectogram of all 15 audio files to analyze their voice pattern with RCBP bird voice pattern
+      </p>
+    <div id="test-birds"></div> 
+    <div style= " float: left" id="vis0" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 1  </div>
+    <div style="margin-left:5% ;float:left" id="vis1" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 2  </div>
+    <div style= "margin-left:65%" id="vis2" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 3  </div>
+    <div style= "float: left" id="vis3" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 4  </div>
+    <div style="margin-left:5% ;float:left" id="vis4" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 5  </div>
+    <div style= "margin-left:65%" id="vis5" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 6  </div>
+    <div style= "float: left" id="vis6" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 7  </div>
+    <div style="margin-left:5% ;float:left" id="vis7" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 8  </div>
+    <div style= "margin-left:65%" id="vis8" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 9  </div>
+    <div style= "float: left" id="vis9" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 10  </div>
+    <div style="margin-left:5% ;float:left" id="vis10" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 11 </div>
+    <div style= "margin-left:65%" id="vis11" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 12  </div>
+    <div style= "float: left" id="vis12" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 13  </div>
+    <div style="margin-left:5% ;float:left" id="vis13" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 14  </div>
+    <div style= "margin-left:65%" id="vis14" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;Kasios Audio File 15  </div>
+    
+    <hr>
+    <h2 id="ml" style="margin-top:2%;">Analysis Based on Machine Learning models</h2>
+    <h4>&nbsp;&nbsp;Audio features extracted for ML model</h4>
+    <p style= "margin-left: 1%;">Here we have extracted different audio features from kasios audio files and feeded the same feature values to ML model.
+      Below are the sample patterns of each feature: Spectral Bandwidth, SpectralCentroid, Spectral RollOff, MFCC,Chromogram</p>
+      <ul>
+        <div style= " float: left; ">
+        <img style="border:1px solid black;" width="700" height="330"src="\img\sc.png"></div>
+        <div style="float:right ">
+        <img style="border:1px solid black;" width="700" height="330" src="\img\sr.png"></div>
+        <div style= "float: left; ">
+        <img style="border:1px solid black;" width="700" height="330" src="\img\sb.png"></div>
+        <div style= "float: right; ">
+        <img style="border:1px solid black;" width="700" height="330" src="\img\zcr.png"></div>
+        <div style= "float:left; ">
+        <img style="border:1px solid black;" width="700" height="330" src="\img\mfcc.png"></div>
+        <div style= "margin-left: 52.15%; ">
+        <img style="border:1px solid black;" width="700" height="330" src="\img\Chr.png"></div>
+      </ul>
+    </p>
+    <hr>
+    <h2>ML maodel performance evaluation</h2>
+    <p>We used kNN, Decision Tree and SVM for classification. Models performed well.</p>
+    <li>Decision Tree Classification Model Report:
+      For this Model Accuracy is 85%, but if we observe in the confusion matrix values for False Negative and False Positives are high which is a negative aspect
+      .</li>
+      <li>GNB Model Report:
+        For GNB model we can clearly observe that, it has high accuracy of 92% compare to any other model also the data is balanced 
+        The confusion Matrix has Zero False Positive Records
+        </li>
+        <li>KNN Model Report:
+          For KNN Model, Accuracy is high 91% and also the data is properly distributed
+          The confusion Matrix here shows one False positive record which my affect the model slightly           
+          </li>
+          <div style="margin-top:3%;">
+            <p>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;GNB &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;KNN &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Decision Tree</p>
+    <div style=" float:left">
+    <img style="border:1px solid black;" width="400" height="400" src="\img\GNB.png"></div>
+    <div style="border:1px solid black; margin-left:10%; float:left"><img  width="400" height="400" src="\img\KNN.png"></div>
+    <vr>
+    <div style="border:1px solid black; margin-left:70%;"><img  width="400" height="400" src="\img\DT.png"></div>
+  </div>
+  <hr>
+    <h1>Analysing results</h1>
+    <p>
+      &emsp;As GNB Model has a better accuracy, we have feed the Kaisos audio file data to this model to verify the RCBP bird audio files
+
+Below are the results for Kasios audio Files:
+
+      <div><img style="border:1px solid black";width="500" height="500" src="\img\res.png"></div>
+    </p>
+    <hr>
+    <h1>Conclusion</h1>
+    <p>
+      <ol>
+        <li>Models performances was good as all were giving high accuracy.</li>
+        <li>We have used GNB model to test the data and we observed among all the kasios audio files only one has Red Crested Blue Pipit bird audio. </li>
+        <li>Also in spectrogram figures we seen that none of the files has similar pattern compare to the actual RCBP audio files provided by Society.</li>
+        <li>Hence, here we can conclude that the claim made by Kasios is false and the extinction of RCBP birds near the arera of dumping zone is true.</li>
+      </ol>
+    </p>
+<hr>
+<footer>
+  <h3>&nbsp;</h3>
+	<h3 style="text-align: ;">Contact us:</h3>
+
+</footer>
+    <script type="text/javascript" src="\js\d3.v5.min.js"></script>
+    <script type="text/javascript" src="\js\spectrogram.js"></script>
+    <script>
+      async function loadFunction() {
+        let elements = await fetch("./elements.json");
+        let data = await elements.json();
+        console.log(data);
+        var sample = new Spectrogram(data.species[0].path, "#rcbp", {
+              width: 900,
+              height: 300,
+              colorScheme: [
+                "dark gray",
+                "#472877",
+                "#3e4a89",
+                "#31688d",
+                "#26838e",
+                "#1f9e89",
+                "#36b778",
+                "#6dcd59",
+                "#b4dd2c",
+                "#fde725",
+              ],
+            });
+        for (let i = 0; i < 16; i++) 
+        var sample2 = new Spectrogram(data.testBirds[i].path,"#vis"+i, {
+              width: 425,
+              height: 200,
+              colorScheme: [
+                "dark gray",
+                "#472877",
+                "#3e4a89",
+                "#31688d",
+                "#26838e",
+                "#1f9e89",
+                "#36b778",
+                "#6dcd59",
+                "#b4dd2c",
+                "#fde725",
+              ],
+            });
+        
+          };
+    </script>
+     <script>
+      const menuToggle = document.querySelector('.toggle');
+       const showcase = document.querySelector('.showcase');
+ 
+       menuToggle.addEventListener('click', () => {
+         menuToggle.classList.toggle('active');
+         showcase.classList.toggle('active');
+       })
+   </script>
+  </body>
+</html>
