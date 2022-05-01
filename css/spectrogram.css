@@ -8,7 +8,7 @@ footer {
 	width: 100%;
 	left: 0;
 	bottom: 0;
-	background-color: rgb(17, 17, 41);
+	background-color: rgb(102, 26, 11);
 	color: white;;
 }
 h{
@@ -56,7 +56,6 @@ header
 header .logo
 {
   color: #fff;
-  text-transform: uppercase;
   cursor: pointer;
 }
 .toggle
