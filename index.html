@@ -26,12 +26,13 @@
   <body onload="loadFunction()">
     <section class="showcase">
       <header>
-        <h2 class="logo">Visual &nbsp;Analytics</h2>
+        <h2 class="logo">VISUAL&nbsp;ANALYTICS 2022<br>Student Team<br>Rowan University</h2>
         <div class="toggle"></div>
       </header>
       <video id="vid" src="\img\RCBP.mp4" muted loop autoplay></video>
       <div class="overlay"></div>
       <div class="text">
+        <h2>&nbsp;</h2>
         <h2>Vast Challenge 2018 MC1</h2> 
         <h3>About the challenge</h3>
         <p>The VAST Challenge results in 2017 revealed that the Kasios Furniture manufacturing firm may have been a major cause to
@@ -49,11 +50,12 @@
         <li style="line-height:2em; margin-left: 1%;"><a href="#analysis">Analysis</a></li>
         <li style="line-height:2em; margin-left: none;"><a href="#Spect">Spectogram Analysis</a></li>
         <li style="line-height:2em; margin-left: none;"><a href="#ml">ML Models Analysis</a></li>
-        <li style="line-height:2em; margin-left: none;"><a href="#ml">ML Models Performace</a></li>
-        <li style="line-height:2em; margin-left: none;"><a href="#ml">Model Results</a></li>
-        <li style="line-height:2em; margin-left: none;"><a href="#ml">Conclusion</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#mlp">ML Models Performace</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#mlr">Model Results</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#Con">Conclusion</a></li>
+        <li style="line-height:2em; margin-left: none;"><a href="#Req">Project Requirements</a></li>
 
-        <li style="margin-top: 60%;"><a style="font-size: 130%; line-height:1.5em; margin-left: 1%;">Team Members:</a>
+        <li style="margin-top: 60%;"><a style="font-size: 130%; line-height:1.5em; margin-left: 1%;" href="#Ct">Team Members:</a>
           <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Manoj Reddy Kotha</li>
           <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Krishna Chaitanya Surabhi</li>
           <li style="font-weight: normal;line-height:1.4em;">&emsp;&emsp;- Sai Manoj Mogaparthi</li>
@@ -71,11 +73,11 @@
     <div id="des">
       <p> 
         Designed by:       
-          <li>Vipeen S Dhore:<a>madhus57@students.rowan.edu</a></li>
-          <li>Prabath Kiran Reddy<a>muchel37@students.rowan.edu</a></li>
-          <li>Manoj Kumar Reddy<a>vangur24@students.rowan.edu</a></li>
-          <li>Krishna Chaitanya<a>doddaa58@students.rowan.edu</a></li>
-          <li>Shreyash<a></a>doddaa58@students.rowan.edu</li>
+          <li>Vipeen S Dhore:</li>
+          <li>Prabath Kiran Reddy</li>
+          <li>Manoj Kumar Reddy</li>
+          <li>Krishna Chaitanya</li>
+          <li>Shreyash<a></li>
         
       </p>
     </div>
@@ -150,15 +152,16 @@
       </div> 
       <hr>
       <div style="width: 100%;">
-        <div style="margin-right: 5%; height: 700px; float: left; background: none"> 
+        <div style="margin-right: 20%; height: 650px; float: left; background: none"> 
           <h4 style="font-size:larger">Captured Locations of Rose-Crested Blue Pipits(1991 to 2018)
-          <p>
-            daojcjaspckaspc
-          </p>
+          <h4>&emsp;-The time series graph shows Rose crested blue pipit birds location <br>from 1991 to 2018</h4> 
+          
+            <h4>&emsp;- Here we can observe that the bird's location around the dumping site has <br>rosen till 2017 and when the dumping 
+          started the location has moved away<br> from the zone</h4>
           </h4>
         </div>
-        <div style="margin-left:55%; height: 700px; background:none"> 
-            <video style="border:1px solid black;" width="670" height="700" id="RCBPlocation" autoplay controls >
+        <div style="margin-left:10%; height: 650px; background:none"> 
+            <video style="border:1px solid black;" width="670" height="645" id="RCBPlocation" autoplay loop muted >
           <source src="\img\RCBPlocation.mp4" type="video/mp4">
         </div>
       </div>
@@ -170,6 +173,9 @@
         </div>
         <div style="margin-left: 40%; height: 500px; background: none;"> 
           <h4 style="font-size:larger">Population variations of Rose-Crested Blue Pipits(1991 to 2018)</h4>
+          <h4>- This time series graph shows us the number of rose crested blue pipit captured in sensors throgh the period of 1991 to 2018</h4>
+          <h4>- We can observe that, as the dumping started in 2017 the number of rose crested pipit birds is decreased further </h4>
+          
         </div>
     </div>
        <script>
@@ -217,7 +223,7 @@
     <div id="rcbp" class="spectrogram">&emsp;&emsp;&emsp;&emsp;&emsp;RCBP Audio File  </div>
     <hr>
     <h3 style="margin-top:2%;">&emsp;Audio Files by Kasios:</h3>
-      <p>&emsp;Kasios has provided 15 audio files which the claim that sensors has captured near the dumping zones.
+      <p>&emsp;Kasios has provided 15 audio files which they claim that sensors has captured near the dumping zones.
         Below we have designed the spectogram of all 15 audio files to analyze their voice pattern with RCBP bird voice pattern
       </p>
     <div id="test-birds"></div> 
@@ -241,7 +247,7 @@
     <h2 id="ml" style="margin-top:2%;">Analysis Based on Machine Learning models</h2>
     <h4>&nbsp;&nbsp;Audio features extracted for ML model</h4>
     <p style= "margin-left: 1%;">Here we have extracted different audio features from kasios audio files and feeded the same feature values to ML model.
-      Below are the sample patterns of each feature: Spectral Bandwidth, SpectralCentroid, Spectral RollOff, MFCC,Chromogram</p>
+      Below are the sample patterns of each feature from 1.mp3 Kasios audio file: Spectral Bandwidth, SpectralCentroid, Spectral RollOff, MFCC,Chromogram</p>
       <ul>
         <div style= " float: left; ">
         <img style="border:1px solid black;" width="700" height="330"src="\img\sc.png"></div>
@@ -258,8 +264,8 @@
       </ul>
     </p>
     <hr>
-    <h2>ML maodel performance evaluation</h2>
-    <p>We used kNN, Decision Tree and SVM for classification. Models performed well.</p>
+    <h2 id="mlp">ML model performance evaluation</h2>
+    <p>We have designed model on basis of classfication methods KNN,GNB and Decision Tree</p>
     <li>Decision Tree Classification Model Report:
       For this Model Accuracy is 85%, but if we observe in the confusion matrix values for False Negative and False Positives are high which is a negative aspect
       .</li>
@@ -280,7 +286,7 @@
     <div style="border:1px solid black; margin-left:70%;"><img  width="400" height="400" src="\img\DT.png"></div>
   </div>
   <hr>
-    <h1>Analysing results</h1>
+    <h1 id="mlr">Analysing results</h1>
     <p>
       &emsp;As GNB Model has a better accuracy, we have feed the Kaisos audio file data to this model to verify the RCBP bird audio files
 
@@ -289,7 +295,7 @@ Below are the results for Kasios audio Files:
       <div><img style="border:1px solid black";width="500" height="500" src="\img\res.png"></div>
     </p>
     <hr>
-    <h1>Conclusion</h1>
+    <h1 id="Con">Conclusion</h1>
     <p>
       <ol>
         <li>Models performances was good as all were giving high accuracy.</li>
@@ -298,10 +304,44 @@ Below are the results for Kasios audio Files:
         <li>Hence, here we can conclude that the claim made by Kasios is false and the extinction of RCBP birds near the arera of dumping zone is true.</li>
       </ol>
     </p>
+    <hr>
+    <h1 id="Req">Project Requirements</h1>
+    <p style="font-weight: bold;">Estimate of the number of hours spent by the entire team working on this submission: 200-250 Hrs<br><br>Tools and Languages Used:
+      <ol>
+        <li>Visual Studio</li>
+        <li>Tableau</li>
+        <li>Anaconda Jupyter</li>
+        <li>Python</li>
+        <li>JavaScript</li>
+        <li>HTML</li>
+      </ol>
+    </p>
+    <p style="font-weight: bold;"> Consent for work to be published in the Visual Analytics Benchmark Repository, which is open to the public</p>
+    
 <hr>
 <footer>
   <h3>&nbsp;</h3>
-	<h3 style="text-align: ;">Contact us:</h3>
+  <h3 id="Ct" style="text-align:center;">Contact Us</h3>
+  <h3>&nbsp;</h3>
+	<h3 style="text-align: Left; font-weight: lighter;font-size: 96%;">&nbsp;Vipeen Subhash Dhore
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;  Manoj Kotha Reddy
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;Prabath Kiran Reddy
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;Sai Manoj Mogaparthi
+      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&emsp;Shreyas Reddy Inavole
+      &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;Krishna Chaitanya Surabhi
+        <br>&nbsp;EmailId:dhorev67@students.rowan.edu
+      &emsp;&nbsp;EmialId:Kotham54@studenst.rowan.edu
+      &emsp;&nbsp;EmialId:chinta82@students.rowan.edu
+      &emsp;&nbsp;EmialId:mogapa82@students.rowan.edu
+      &emsp;&nbsp;Inavol39@students.rowan.Edu
+      &emsp;&nbsp;surabh55@students.rowan.edu
+        <br>&nbsp;Mobile Number: +18564901218 
+      &emsp;&emsp;&emsp;&emsp;&nbsp;Mobile Number:+18564901280
+      &emsp;&emsp;&emsp;&emsp;&nbsp;&nbsp;&nbsp;Mobile Number:+18564901493
+      &emsp;&emsp;&emsp;&emsp;Mobile Number:+19045978517
+      &emsp;&emsp;&emsp;&emsp;&emsp;Mobile Number:+15712251226
+      &emsp;Mobile Number:+18287884429</h3>
+      <h3>&nbsp;</h3>
 
 </footer>
     <script type="text/javascript" src="\js\d3.v5.min.js"></script>
