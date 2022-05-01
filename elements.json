@@ -1,4 +1,12 @@
 {
+  
+  "species": [
+    {
+      "name": "Rose-crested Blue pipits",
+      "path": "data/species/BluePipit.ogg",
+      "parentDivElement": "species"
+    }
+  ],
   "testBirds": [
     {
       "id":"one",
@@ -75,13 +83,6 @@
       "name": "15.mp3",
       "path": "data/test-birds/15.mp3",
       "parentDivElement": "test-birds"
-    }
-  ],
-  "species": [
-    {
-      "name": "Rose-crested Blue pipits",
-      "path": "data/species/BluePipit.ogg",
-      "parentDivElement": "species"
     }
   ]
 }
